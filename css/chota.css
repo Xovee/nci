@@ -52,6 +52,12 @@ body {
   margin: 0;
   padding: 0;
 }
+mark {
+    background-color: #004098;
+    color: white;
+    padding: .3rem .7rem;
+    margin: auto .3rem;
+}
 h1,
 h2,
 h3,
