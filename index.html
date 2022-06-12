@@ -12,21 +12,30 @@
   <meta property="og:image" content="">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/chota.css">
-<!--  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>-->
-
+  <style>
+    nav {margin-bottom: 2rem;}
+  </style>
 </head>
 
 <body>
+
 <main class="container">
-  <div>
-    <h1 class="text-center">新·成语</h1>
-    <p>Under construction. 网络成语……</p>
+
+  <div id='title'>
+    <h1 class="text-center">新·成语 New Chinese Idioms</h1>
   </div>
 
 
-  <div class="row">
+  <nav class='tabs is-full'>
+    <a id='nav-zh' onclick='tabShowHide(event, "tab-zh-content")' class='tablinks active'>中文版</a>
+    <a id='nav-en' onclick='tabShowHide(event, "tab-en-content")' class='tablinks'>English Version</a>
+    <a id='nav-about' onclick='tabShowHide(event, "tab-about-content")' class='tablinks'>关于/About</a>
+  </nav>
+
+  <!-- Chinese version -->
+  <div class="row tabcontent" id='tab-zh-content'>
 
     <div class="col-6 col-4-lg">
       <div class="card">
@@ -136,6 +145,46 @@
       </div>
     </div>
 
+  </div>
+
+  <!-- English version -->
+  <div class='row tabcontent' id='tab-en-content'>
+    <h1>English Version</h1>
+  </div>
+
+  <!-- About -->
+  <div class='tabcontent row' id='tab-about-content'>
+
+    <div class='col-12 card'>
+      <div class='row'>
+        <div class='col'>
+          <h3>关于本站</h3>
+          <p>正在写呢。。。</p>
+        </div>
+        <div class='col'>
+          <h3>About This Website</h3>
+          <p>The popularity of new Chinese idioms since 2013 triggered tremendous debates among netizens, language experts, as well as <a href='http://ent.people.com.cn/n/2014/1208/c1012-26165074.html' target='_blank'>official newspapers</a> run by the government. Within almost ten years of development... (Under construction)</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class='col-6 col-4-lg'>
+      <div class='card'>
+        <h3>选择标准 Inclusion Criteria</h3>
+        <p>成语的使用较为流行，使用范围较广，流行时间较长。</p>
+        <p>The using of the new idiom is popular, the use scope is broad, the popularity is standing.</p>
+      </div>
+    </div>
+
+    <div class='col-6 col-4-lg'>
+      <div class='card'>
+        <h3>贡献 Contribution</h3>
+        <p><a href='mailto:xovee@ieee.org'>发邮件</a>或者在<a href='https://github.com/Xovee/nci' target='_blank'>Github</a>上提交PR。</p>
+        <p><a href='mailto:xovee@ieee.org'>Send me email</a> or create pull request at <a href='https://github.com/Xovee/nci' target='_blank'>Github</a>.</p>
+      </div>
+    </div>
+
     <div class="col-6 col-4-lg">
       <div class="card">
         <h3>Xovee Xu</h3>
@@ -152,16 +201,38 @@
       </div>
     </div>
 
-  </div>
+</div>
 </main>
 
 <hr>
 
 <footer class="page-footer brown lighten-4">
   <div class="container grey-text text-center">
-  © 2022 <a href="https:/xovee.cn" target="_blank">Xovee Xu</a>. All Rights Reserved. Powered by <a href="jenil.github.io/chota/" target="_blank">chota</a>.
+  © 2022 <a href="https:/xovee.cn" target="_blank">Xovee Xu</a>. All Rights Reserved. Powered by <a href="https://jenil.github.io/chota" target="_blank">chota</a>. Hosted on <a href='https://github.com/Xovee/nci' target='_blank'>GitHub</a>. 
   </div>
 </footer>
+
+<script>
+  function tabShowHide(evt, tabName) {
+    // hide all content
+    tabcontent = document.getElementsByClassName('tabcontent');
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+
+    // remove all active status
+    tablinks = document.getElementsByClassName('tablinks');
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // show current tab content, add active class
+    document.getElementById(tabName).style.display = 'flex';
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById('nav-zh').click();
+</script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RKRTC1TG5F"></script>
