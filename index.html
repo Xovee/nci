@@ -21,21 +21,27 @@
 
 <body>
 
+<nav class='tabs is-full'>
+  <a id='nav-zh' onclick='tabShowHide(event, "tab-zh-content")' class='tablinks active'>中文版</a>
+  <a id='nav-en' onclick='tabShowHide(event, "tab-en-content")' class='tablinks'>English Version</a>
+  <a id='nav-about' onclick='tabShowHide(event, "tab-about-content")' class='tablinks'>关于/About</a>
+</nav>
+
 <main class="container">
-
-  <div id='title'>
-    <h1 class="text-center">新·成语 New Chinese Idioms</h1>
-  </div>
-
-
-  <nav class='tabs is-full'>
-    <a id='nav-zh' onclick='tabShowHide(event, "tab-zh-content")' class='tablinks active'>中文版</a>
-    <a id='nav-en' onclick='tabShowHide(event, "tab-en-content")' class='tablinks'>English Version</a>
-    <a id='nav-about' onclick='tabShowHide(event, "tab-about-content")' class='tablinks'>关于/About</a>
-  </nav>
 
   <!-- Chinese version -->
   <div class="row tabcontent" id='tab-zh-content'>
+
+    <div class="col-6 col-4-lg">
+      <div class="card">
+        <h3>新·成语</h3>
+        <blockquote>
+          <p>本站记录自2010年起，流行于互联网的新成语，包括它们的含义与起源。<br>
+            <small class='text-grey is-right'>——Xovee Xu</small>
+          </p>
+        </blockquote>
+      </div>
+    </div>
 
     <div class="col-6 col-4-lg">
       <div class="card">
@@ -149,7 +155,31 @@
 
   <!-- English version -->
   <div class='row tabcontent' id='tab-en-content'>
-    <h1>English Version</h1>
+
+    <div class="col-4">
+      <div class="card">
+        <h3>New Chinese Idioms</h3>
+        <blockquote>
+          <p>This website records the new Chinese idioms popular since 2010 in Internet. The explanations/origins of the new idioms are also included.<br>
+            <small class='text-grey is-right'>——Xovee Xu</small>
+          </p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="card">
+        <h3>Guidance</h3>
+        <ul>
+          <li>Line 1: Original four-word Chinese idiom</li>
+          <li>Line 2: Chinese phonetic alphabet</li>
+          <li>Line 3: Absolute word-to-word Translation</li>
+          <li>Line 4: Origin, a related "sentence" or "social event" that motivates the creation of the idiom</li>
+          <li>Line 5: English explanation</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
   <!-- About -->
