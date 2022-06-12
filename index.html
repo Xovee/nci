@@ -21,7 +21,7 @@
 
 <body>
 
-<nav class='tabs is-full'>
+<nav class='tabs is-full container' style='margin-bottom: 2rem;'>
   <a id='nav-zh' onclick='tabShowHide(event, "tab-zh-content")' class='tablinks active'>中文版</a>
   <a id='nav-en' onclick='tabShowHide(event, "tab-en-content")' class='tablinks'>English Version</a>
   <a id='nav-about' onclick='tabShowHide(event, "tab-about-content")' class='tablinks'>关于/About</a>
@@ -169,14 +169,60 @@
 
     <div class="col-8">
       <div class="card">
-        <h3>Guidance</h3>
+        <h3 style='margin-bottom: 0pt;'>Guidance</h3>
+        <span>How each card is organized?</span>
         <ul>
           <li>Line 1: Original four-word Chinese idiom</li>
-          <li>Line 2: Chinese phonetic alphabet</li>
-          <li>Line 3: Absolute word-to-word Translation</li>
-          <li>Line 4: Origin, a related "sentence" or "social event" that motivates the creation of the idiom</li>
-          <li>Line 5: English explanation</li>
+          <li>Line 2: Absolute word-to-word Translation</li>
+          <li>Line 3: Origin, a related "sentence" or "social event" that motivates the creation of the idiom</li>
+          <li>Line 4: English explanation</li>
         </ul>
+      </div>
+    </div>
+
+    <div class='col-6 card'>
+      <div class='row bd large'>
+        <div class='col'>听</div>
+        <div class='col'>谢</div>
+        <div class='col'>因</div>
+        <div class='col'>温</div>
+      </div>
+      <div class='row'>
+        <div class='col'>hear</div>
+        <div class='col'>thank</div>
+        <div class='col'>because</div>
+        <div class='col'>warm</div>
+      </div>
+      <div class='row'>
+        <blockquote>
+          <p>This new idiom is from a popular Chinese song's lyric: "<mark>听</mark>我说，<mark>谢</mark>谢你，<mark>因</mark>为有你，<mark>温</mark>暖了四季" from <i>听我说谢谢你</i> by 李昕融. Translation of the lyric: "I want to say, thank you, because of you, (your behaviors) warm the four seasons". The popularity of this song is because during the COVID-19 outbreak in Shanghai city in April 2022, many students are required to sing this song (often with dancing) to show their gratitudes to the epidemic prevention workers after receiving the virus-NAT. Many netizens are sick of those "hypocritical shows".</p>
+        </blockquote>
+      </div>
+      <div class='row'>
+        <p>Simply means "Thank you," but with irony.</p>
+      </div>
+    </div>
+
+    <div class='col-6 card'>
+      <div class='row bd large'>
+        <div class='col'>喜</div>
+        <div class='col'>大</div>
+        <div class='col'>普</div>
+        <div class='col'>奔</div>
+      </div>
+      <div class='row'>
+        <div class='col'>happiness</div>
+        <div class='col'>large</div>
+        <div class='col'>universally</div>
+        <div class='col'>hurry/run</div>
+      </div>
+      <div class='row'>
+        <blockquote>
+          <p>This new idiom is composed by the first word of FOUR individual Chinese idioms. They are <mark>喜</mark>闻乐见, <mark>大</mark>快人心, <mark>普</mark>天同庆, <mark>奔</mark>走相告. Become popular since Sept 2012. </p>
+        </blockquote>
+      </div>
+      <div class='row'>
+        <p>The meaning of the four idioms is "We are happy to hear and see the happening of this thing, it is so exciting, everyone should celebrate that, go around and tell others this thing." In short, this idiom menas "THIS is a very good thing, everyone should be happy and share this thing to others."</p>
       </div>
     </div>
 
@@ -261,7 +307,7 @@
     evt.currentTarget.className += " active";
   }
 
-  document.getElementById('nav-zh').click();
+  document.getElementById('nav-en').click();
 </script>
 
 <!-- Google Analytics -->

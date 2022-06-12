@@ -67,6 +67,9 @@ h6 {
   font-weight: 500;
   margin: 0.35em 0 0.7em 0;
 }
+.large {
+    font-size: 2rem;
+}
 h1 {
   font-size: 2em;
 }
@@ -105,7 +108,7 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
 }
-dl dt {
+dl dt, .bd {
   font-weight: bold;
 }
 hr {
