@@ -15,19 +15,20 @@
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/chota.css">
   <style>
-    nav {margin-bottom: 2rem;}
+    nav {margin-bottom: 2rem; overflow: hidden; position: fixed; top: 0; background-color: white; opacity: .95;}
+    .main-top {margin-top: 6rem;}
   </style>
 </head>
 
 <body>
 
-<nav class='tabs is-full container' style='margin-bottom: 2rem;'>
+<nav class='tabs is-full container'>
   <a id='nav-zh' onclick='tabShowHide(event, "tab-zh-content")' class='tablinks active'>中文版</a>
   <a id='nav-en' onclick='tabShowHide(event, "tab-en-content")' class='tablinks'>English Version</a>
   <a id='nav-about' onclick='tabShowHide(event, "tab-about-content")' class='tablinks'>关于/About</a>
 </nav>
 
-<main class="container">
+<main class="main-top container">
 
   <!-- Chinese version -->
   <div class="row tabcontent" id='tab-zh-content'>
@@ -206,29 +207,6 @@
 
     <div class='col-6 card'>
       <div class='row bd large'>
-        <div class='col'>喜</div>
-        <div class='col'>大</div>
-        <div class='col'>普</div>
-        <div class='col'>奔</div>
-      </div>
-      <div class='row'>
-        <div class='col'>happiness</div>
-        <div class='col'>large</div>
-        <div class='col'>universally</div>
-        <div class='col'>hurry/run</div>
-      </div>
-      <div class='row'>
-        <blockquote>
-          <p>This new idiom is composed by the first word of FOUR individual Chinese idioms. They are <mark>喜</mark>闻乐见, <mark>大</mark>快人心, <mark>普</mark>天同庆, <mark>奔</mark>走相告. Become popular since Sept 2012. </p>
-        </blockquote>
-      </div>
-      <div class='row'>
-        <p>The meaning of the four idioms is "We are happy to hear and see the happening of this thing, it is so exciting, everyone should celebrate that, go around and tell others this thing." In short, this idiom menas "THIS is a very good thing, everyone should be happy and share this thing to others."</p>
-      </div>
-    </div>
-
-    <div class='col-6 card'>
-      <div class='row bd large'>
         <div class='col'>人</div>
         <div class='col'>艰</div>
         <div class='col'>不</div>
@@ -274,6 +252,52 @@
       </div>
     </div>
 
+    <div class='col-6 card'>
+      <div class='row bd large'>
+        <div class='col'>喜</div>
+        <div class='col'>大</div>
+        <div class='col'>普</div>
+        <div class='col'>奔</div>
+      </div>
+      <div class='row'>
+        <div class='col'>happiness</div>
+        <div class='col'>large</div>
+        <div class='col'>universally</div>
+        <div class='col'>hurry/run</div>
+      </div>
+      <div class='row'>
+        <blockquote>
+          <p>This new idiom is composed by the first word of FOUR individual Chinese idioms. They are <mark>喜</mark>闻乐见, <mark>大</mark>快人心, <mark>普</mark>天同庆, <mark>奔</mark>走相告. Become popular since Sept 2012. </p>
+        </blockquote>
+      </div>
+      <div class='row'>
+        <p>The meaning of the four idioms is "We are happy to hear and see the happening of this thing, it is so exciting, everyone should celebrate that, go around and tell others this thing." In short, this idiom menas "THIS is a very good thing, everyone should be happy and share this thing to others."</p>
+      </div>
+    </div>
+
+
+    <div class='col-6 card'>
+      <div class='row bd large'>
+        <div class='col'>不</div>
+        <div class='col'>明</div>
+        <div class='col'>觉</div>
+        <div class='col'>厉</div>
+      </div>
+      <div class='row'>
+        <div class='col'>don't</div>
+        <div class='col'>know</div>
+        <div class='col'>feel</div>
+        <div class='col'>brilliant</div>
+      </div>
+      <div class='row'>
+        <blockquote>
+          <p>This new idiom is originally from a movie's dialogue "Although I don't know what you're saying, but I feel what you said is great (虽然<mark>不明</mark>白你在说什么，但<mark>觉</mark>得很<mark>厉</mark>害的样子)." The netizens short the sentence to a four-word idiom. Become popular since Oct 2011.</p>
+        </blockquote>
+      </div>
+      <div class='row'>
+        <p>Describe somethings unclear but looks very amazing.</p>
+      </div>
+    </div>
   </div>
 
   <!-- About -->
